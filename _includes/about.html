@@ -1,37 +1,83 @@
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 table-responsive">
-                <h2>5961 Tarpon Gardens Circle</h2>
-                <table class="table">
-                    <tr>
-                        <td>
-                            <i class="h2 fa fa-home"></i>
-                            <h5>SQ.FT Living Area</h5>
-                            <h4>2,178</h4>
-                        </td>
-                        <td>
-                            <i class="h2 fa fa-bed"></i>
-                            <h5>Number of Bedrooms</h5>
-                            <h4>3</h4>
-                        </td>
-                        <td>
-                            <i class="h2 fa fa-bath"></i>
-                            <h5>Number of Bathrooms</h5>
-                            <h4>2.5</h4>
-                        </td>
-                        <td>
-                            <i class="h2 fa fa-warehouse"></i>
-                            <h5>Parking Garage</h5>
-                            <h4>2</h4>
-                        </td>
-                        <td>
-                            <i class="h2 fa fa-hard-hat"></i>
-                            <h5>Year Built</h5>
-                            <h4>2004</h4>
-                        </td>
-                    </tr>
-                </table>
+    <section id="about" class="container content-section">
+        <div class="">
+            <h2>
+                <small class="text-muted">Available 01 properties</small><br>
+                Tarpon Gardens Lakefront
+            </h2>
+            <p>Total area: <small class="text-muted">2,178 ft2</small> / <small class="text-muted">3 bedroom, 3 bath</small></p>
+            <p>This private Tarpon Gardens Lake Home feels like a house without the work & maintenance in Cape Corals most desirable & exclusive neighborhoods. Open floor plan with vaulted & tray ceilings. Remodeled kitchen with granite counters, pantry, stainless steel appliances plus casual & formal dining. Inviting living room with crown molding, bar area with wine cooler & wall-to-wall sliders overlooking the lake.</p> 
+            <p>Spectacular waterfront owner suite w/ remodeled resort style bathroom! Walk-in shower, soaking tub & closets with custom shelving. Generously sized spare bedrooms perfect for families, guests, or office. Bedroom closets also offer custom shelving & share a remodeled full bathroom with huge walk-in shower. NO STAIRS, ground floor, plantation shutters & lakefront patio. Oversized 2 car garage with cabinets for storage.</p>
+            
+            <h2>
+                <small class="text-muted">Amenities</small><br>
+                What you'll look forward to most
+            </h2>
+            <div class="card-columns">
+                {% include ammenity.html icon="fa-garage-open" title="Parking" description="oversized 2 car garage" %}
+                {% include ammenity.html icon="fa-stairs" title="Accessibility" description="single floor home" %}
+                {% include ammenity.html icon="fa-shield" title="Security" description="24 hour guarded entrance" %}
+                {% include ammenity.html icon="fa-racquet" title="Tennis" description="on campus tennis courts" %}
+                {% include ammenity.html icon="fa-dumbbell" title="Fitness Room" description="on campus gym" %}
+                {% include ammenity.html icon="fa-swimmer" title="Swimming" description="resort-style pool" %}
+                {% include ammenity.html icon="fa-sailboat" title="Boating" description="full service marina in walking distance" %}
+                {% include ammenity.html icon="fa-bags-shopping" title="Shopping" description="waterfront shops in walking distance" %}
+                {% include ammenity.html icon="fa-fork-knife" title="Dining" description="4 waterfront restaurants in walking distance" %}
             </div>
+
+            <h2>Gallery</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    {% for image in site.static_files %}
+                        {% if image.path contains 'img/property' %}
+                            <div class="carousel-item {% if image.path contains '221055635_1.jpg' %}active{% endif %}">
+                                <img class="d-block w-100" src="{{ site.baseurl }}{{ image.path }}" alt="image">
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <p></p>
+            <h2>Rates</h2>
+            <table class="table table-hover text-light">
+                <thead>
+                  <tr>
+                    <th scope="col">Season</th>
+                    <th scope="col">Month(s)</th>
+                    <th scope="col">Monthly Rate</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Peak</td>
+                    <td>January, February, March, April</td>
+                    <td>$6,500</td>
+                  </tr>
+                  <tr>
+                    <td>Standard</td>
+                    <td>May</td>
+                    <td>$5,500</td>
+                  </tr>
+                  <tr>
+                    <td>Off Peak</td>
+                    <td>June, July, August, September</td>
+                    <td>$4,500</td>
+                  </tr>
+                  <tr>
+                    <td>Standard</td>
+                    <td>October, November, December</td>
+                    <td>$5,500</td>
+                  </tr>
+                </tbody>
+              </table>
+              <small><i>Inquire about special rates for multi-month rentals.</i></small>
         </div>
     </section>

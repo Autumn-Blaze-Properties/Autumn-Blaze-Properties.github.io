@@ -181,4 +181,17 @@ function init() {
         map: map,
         icon: image
     });
+
+    var disableddates = ["12-21-2021", "12-22-2021", "12-23-2021"];
+
+    function DisableSpecificDates(date) {
+        var string = jQuery.datepicker.formatDate('dd-mm-yy', date);
+        return [disableddates.indexOf(string) == -1];
+    }
+
+    $(function() {
+        $("#date").datepicker({
+          beforeShowDay: DisableSpecificDates
+        });
+    });
 }
