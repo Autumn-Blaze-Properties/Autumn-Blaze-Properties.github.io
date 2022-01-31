@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: {{ site.color.links }};
+    color: {{ site.color.secondary }};
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -66,7 +66,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: {{ site.color.primary-dark }} !important;
+    background-color: {{ site.color.secondary }} !important;
 }
 
 .navbar-custom .navbar-brand {
@@ -311,17 +311,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid {{ site.color.links }};
-    color: {{ site.color.links }};
+    border: 1px solid {{ site.color.secondary }};
+    color: {{ site.color.secondary }};
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid {{ site.color.links }};
+    border: 1px solid {{ site.color.secondary }};
     outline: 0;
     color: {{ site.color.primary-dark }};
-    background-color: {{ site.color.links }};
+    background-color: {{ site.color.secondary }};
 }
 
 ul.banner-social-buttons {

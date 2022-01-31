@@ -9,7 +9,7 @@ description: "Welcome to Cape Coral."
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#E08265'
-  links: '#2F7494'
+  secondary: '#00122E'
 
   # green 73932F
   # blue 2F7494
