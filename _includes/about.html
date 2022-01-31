@@ -1,6 +1,6 @@
     <!-- About Section -->
     <section id="about" class="container content-section">
-        <div class="">
+        <div>
             <h2>
                 <small class="text-muted">Available 01 properties</small><br>
                 Tarpon Gardens Lakefront
@@ -19,11 +19,17 @@
                 {% include ammenity.html icon="fa-shield" title="Security" description="24 hour guarded entrance" %}
                 {% include ammenity.html icon="fa-racquet" title="Tennis" description="on campus tennis courts" %}
                 {% include ammenity.html icon="fa-dumbbell" title="Fitness Room" description="on campus gym" %}
-                {% include ammenity.html icon="fa-swimmer" title="Swimming" description="resort-style pool" %}
+                {% include ammenity.html icon="fa-swimmer" title="Swimming" description="on campus resort-style pool" %}
                 {% include ammenity.html icon="fa-sailboat" title="Boating" description="full service marina in walking distance" %}
                 {% include ammenity.html icon="fa-bags-shopping" title="Shopping" description="waterfront shops in walking distance" %}
                 {% include ammenity.html icon="fa-fork-knife" title="Dining" description="4 waterfront restaurants in walking distance" %}
             </div>
+
+            <h2>
+              <small class="text-muted">Location</small><br>
+              See how close you are to local hotspots
+            </h2>
+            {% include map.html %}
 
             <h2>Gallery</h2>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -78,6 +84,6 @@
                   </tr>
                 </tbody>
               </table>
-              <small><i>Inquire about special rates for multi-month rentals.</i></small>
+              <small><i>Inquire about special rates for multi-month rentals.</i></small>              
         </div>
     </section>
