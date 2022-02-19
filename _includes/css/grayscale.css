@@ -13,6 +13,10 @@ body {
     background-color: {{ site.color.primary-dark }};
 }
 
+small.text-muted {
+    color: #FD833C !important;
+}
+
 html {
     width: 100%;
     height: 100%;
