@@ -28,3 +28,4 @@ gem "webrick", "~> 1.7"
 
 # Search Optimization
 gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
