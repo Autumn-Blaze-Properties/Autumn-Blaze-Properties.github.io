@@ -14,7 +14,7 @@ body {
 }
 
 small.text-muted {
-    color: #FD833C !important;
+    color: #00122E !important;
 }
 
 html {
@@ -59,7 +59,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #e8cfc1;
+    color: #FD833C;
 }
 
 .light {
