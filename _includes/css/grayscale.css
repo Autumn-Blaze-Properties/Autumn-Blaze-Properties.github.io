@@ -174,10 +174,12 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    filter: drop-shadow(.5px .5px {{ site.color.primary-dark }})
 }
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+    filter: drop-shadow(0.5px .5px {{ site.color.primary-dark }})
 }
 
 @media(min-width:767px) {
