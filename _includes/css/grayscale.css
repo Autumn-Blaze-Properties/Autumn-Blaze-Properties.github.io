@@ -11,6 +11,7 @@ body {
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: {{ site.color.primary-dark }};
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
 small.text-muted {
@@ -37,14 +38,17 @@ h6 {
 
 p {
     margin: 0 0 25px;
-    font-size: 14px;
+    font-size: min(max(20px, 7vw), 22px);
     line-height: 1.5;
+}
+
+table {
+    font-size: 5vw;
 }
 
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
-        font-size: 18px;
         line-height: 1.6;
     }
 }
@@ -84,7 +88,6 @@ a:focus {
 
 .navbar-custom .navbar-toggle {
     padding: 4px 6px;
-    font-size: 16px;
     color: #fff;
 }
 
@@ -173,12 +176,10 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 40px;
     filter: drop-shadow(.5px .5px {{ site.color.primary-dark }})
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
     filter: drop-shadow(0.5px .5px {{ site.color.primary-dark }})
 }
 
@@ -186,24 +187,12 @@ a:focus {
     .intro {
         height: 100%;
     }
-
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 25px;
-    }
 }
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
     margin-top: 15px;
-    padding: 7px 16px;
     border: 2px solid #fff;
     border-radius: 35px;
-    font-size: 40px;
     color: #fff;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
@@ -386,10 +375,11 @@ img::-moz-selection {
     background: 0 0;
 }
 
-body {
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
-}
-
 .form-row {
     display: flex;
+}
+
+.mapouter {
+    padding: 0;
+    width: 100vw;
 }
