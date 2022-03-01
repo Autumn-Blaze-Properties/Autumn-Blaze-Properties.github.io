@@ -4,7 +4,9 @@ email: autumnblazerealty@gmail.com
 url: https://autumnblazeproperties.com
 baseurl: 
 description: "Welcome to Cape Coral's finest extended stay rental properties."
-# 5961 Tarpon Gardens Circle
+
+# Google Analytics
+google_analytics: UA-84274668-4
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
