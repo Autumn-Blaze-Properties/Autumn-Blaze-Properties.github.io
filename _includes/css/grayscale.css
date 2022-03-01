@@ -42,10 +42,6 @@ p {
     line-height: 1.5;
 }
 
-table {
-    font-size: 5vw;
-}
-
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
