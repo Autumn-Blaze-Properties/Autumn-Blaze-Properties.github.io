@@ -383,3 +383,7 @@ img::-moz-selection {
     padding: 0;
     width: 100vw;
 }
+
+#contact {
+    padding: 3rem 5rem;
+}
