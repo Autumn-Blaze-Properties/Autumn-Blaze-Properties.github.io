@@ -142,12 +142,21 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
+    margin-top: 70px;
     background: url({{ site.baseurl }}/img/intro.jpg) no-repeat bottom center scroll;
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.intro h1 {
+    font-size: 5rem;
+}
+
+.intro p {
+    font-size: 2rem;
 }
 
 .blur-bgimage:before {
