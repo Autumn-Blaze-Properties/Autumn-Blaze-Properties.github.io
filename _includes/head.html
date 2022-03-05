@@ -3,7 +3,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="shortcut icon" type="image/png" href="{{ "/favicon.svg" | prepend: site.baseurl }}">
 
@@ -29,6 +28,11 @@
     <![endif]-->
 
     {% seo %}
+    <meta name="title" content="{{ page.title }}"/>
+    <meta name="description" content="{{ site.description }} Walk (about 5 minutes) to Tarpon Point Marina with boats, restaurants, bars, and shopping.">
+    <meta name="keywords" content="Cape Coral Rental, Luxury, Luxury Rental, High End Rental, Vacation Rental, Long Term Vacation Rental, Seasonal Vacation Rental, Fort Myers, Fort Myers Beach, Sanibel, Sanibel Island, Captiva Marina, Resort Rental, Tennis, Boating, Access Gulf of Mexico, Gulf, Gulf Access, Tarpon, Tarpon Breeze, Tarpon Point, Tarpon Point Marina, Paradise, Ocean"/>
+    <meta name="robots" content="index,follow"/>
+
     {% if site.google_analytics and jekyll.environment == 'production' %}
         {% include analytics.html %}
     {% endif %}
